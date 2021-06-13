@@ -9,6 +9,7 @@ const User = mongoose.model('user', {
     },
     email: {
         type: String,
+        unique: true,
         required: true,
         lowercase: true,
         trim: true,
